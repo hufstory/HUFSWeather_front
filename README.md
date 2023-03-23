@@ -1,7 +1,7 @@
 # HufsWeather Front-End
 - 훕스토리 외상청 프로젝트  
 
-- 프론트엔드 팀원 : 김현아, 이교은, 임동혁(sub)
+- 프론트엔드 팀원 : 김현아, 이교은, 임동혁
 
 ## Checklist for git cloning Project
 #### 설치
