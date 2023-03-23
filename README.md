@@ -25,7 +25,8 @@
   ```bash
   npm install tailwindcss postcss autoprefixer
   ```
-    ```bash
+
+  ```bash
   npm install react-router-dom
   ```
 
