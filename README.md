@@ -25,6 +25,9 @@
   ```bash
   npm install tailwindcss postcss autoprefixer
   ```
+    ```bash
+  npm install react-router-dom
+  ```
 
 
 # Getting Started with Create React App
