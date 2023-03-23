@@ -653,6 +653,10 @@ video {
   padding: 1.25rem;
 }
 
+.font-GangwonBold {
+  font-family: GangwonEduPowerExtraBoldA, sans-serif;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
