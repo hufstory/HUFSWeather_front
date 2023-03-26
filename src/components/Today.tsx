@@ -1,4 +1,5 @@
 import React from "react"
+import calendarImage from "../statics/images/calendar.png"
 
 const Today = () => {
   const today: Date = new Date()
@@ -8,14 +9,15 @@ const Today = () => {
   const day: string = dayOfWeek[today.getDay()]
 
   return (
-    <div>
-      <h1 className="text-orange-500">오늘의 캠퍼스</h1>
-      <h1>오늘의 외상청</h1>
-      <h1>
-        {month}월 {date}일 {day}요일 소식입니다.
-      </h1>
+    <div className="container mx-auto pt-[96px]">
+      <div className="leading-[64px] text-[46px] font-bold font-GmarketMedium">
+        <img className="h-[66px]" src={calendarImage}></img>
+        <h1>오늘의 한국외대 글로벌캠퍼스</h1>
+        <span>
+          {month}월 {date}일 {day}요일 소식입니다.
+        </span>
+      </div>
     </div>
   )
 }
-
 export default Today
