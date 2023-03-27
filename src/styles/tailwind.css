@@ -10,25 +10,25 @@
   @font-face {
     font-family: "GmarketSansBold";
   
-    src: url("../statics/fonts/GangwonEduPowerExtraBoldA.woff");
+    src: url("../assets/fonts/GangwonEduPowerExtraBoldA.woff");
   }
   
   @font-face {
     font-family: "GmarketSansMedium";
   
-    src: url("../statics/fonts/GmarketSansMedium.woff");
+    src: url("../assets/fonts/GmarketSansMedium.woff");
   }
 
   @font-face {
     font-family: "GmarketSansLight";
   
-    src: url("../statics/fonts/GmarketSansLight.ttf");
+    src: url("../assets/fonts/GmarketSansLight.ttf");
   }
 
   @font-face {
     font-family: "Jalnan";
   
-    src: url("../statics/fonts/Jalnan.ttf");
+    src: url("../assets/fonts/Jalnan.ttf");
   }
 
 @tailwind components;

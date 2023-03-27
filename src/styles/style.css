@@ -662,6 +662,10 @@ video {
   display: flex;
 }
 
+.h-\[66px\] {
+  height: 66px;
+}
+
 .h-\[72px\] {
   height: 72px;
 }

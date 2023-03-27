@@ -1,5 +1,5 @@
 import React from "react"
-import calendarImage from "../statics/images/calendar.png"
+import calendarImage from "../assets/images/calendar.png"
 
 const Today = () => {
   const today: Date = new Date()
