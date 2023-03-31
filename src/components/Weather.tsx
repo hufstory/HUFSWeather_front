@@ -25,19 +25,25 @@ const Weather = () => {
   }, [])
 
   return (
-    <div>
-      {data ? (
-        <>
-          <p className="text-red">Temperature: {data.temp}</p>
-          <p>Feels like: {data.feel_temp}</p>
-          <p>Humidity: {data.humidity}</p>
-          <p>Weather: {data.weather}</p>
-        </>
-      ) : (
-        <p>Loading...</p>
-      )}
+    <div className="container mx-auto pt-[96px]">
+      <div className="mt-10 mb-10 text-black bg-transparent relative p-10 rounded-[14px] shadow-default hover:-translate-y-1 hover:scale-100 duration-300">
+        {data ? (
+          <>
+            <p>현재기온: {data.temp}</p>
+            <p>체감온도: {data.feel_temp}</p>
+            <p>습도: {data.humidity}</p>
+            <p>날씨: {data.weather}</p>
+          </>
+        ) : (
+          <p>Loading...</p>
+        )}
+      </div>
     </div>
   )
 }
 
 export default Weather
+
+
+
+
