@@ -25,18 +25,20 @@ const Weather = () => {
   }, [])
 
   return (
-    <div className="container mx-auto pt-[96px]">
-      <div className="mt-10 mb-10 text-black bg-transparent relative p-10 rounded-[14px] shadow-default hover:-translate-y-1 hover:scale-100 duration-300">
-        {data ? (
-          <>
-            <p>현재기온: {data.temp}</p>
-            <p>체감온도: {data.feel_temp}</p>
-            <p>습도: {data.humidity}</p>
-            <p>날씨: {data.weather}</p>
-          </>
-        ) : (
-          <p>Loading...</p>
-        )}
+    <div className="container mt-[27px]">
+      <div className="bg-[#F5F5F5] h-[78px] rounded-today mx-5 text-[16px] leading-6 text-black flex justify-start items-center">
+        <div className="py-4 pl-9">
+          {data ? (
+            <>
+              <p>현재기온: {data.temp}</p>
+              <p>체감온도: {data.feel_temp}</p>
+              <p>습도: {data.humidity}</p>
+              <p>날씨: {data.weather}</p>
+            </>
+          ) : (
+            <p>Loading...</p>
+          )}
+        </div>
       </div>
     </div>
   )

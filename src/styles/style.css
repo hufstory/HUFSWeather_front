@@ -789,6 +789,12 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.shadow-default {
+  --tw-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
+  --tw-shadow-colored: 4px 12px 30px 6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }

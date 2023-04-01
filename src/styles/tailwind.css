@@ -1,34 +1,39 @@
 @tailwind base;
 
-@font-face {
-    font-family: 'GangwonEduPowerExtraBoldA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  @font-face {
+    font-family: "NotoSansKR-Black";
+  
+    src: url("../assets/fonts/NotoSansKR-Black.otf");
   }
 
   @font-face {
-    font-family: "GmarketSansBold";
+    font-family: "NotoSansKR-Bold";
   
-    src: url("../assets/fonts/GangwonEduPowerExtraBoldA.woff");
-  }
-  
-  @font-face {
-    font-family: "GmarketSansMedium";
-  
-    src: url("../assets/fonts/GmarketSansMedium.woff");
+    src: url("../assets/fonts/NotoSansKR-Bold.otf");
   }
 
   @font-face {
-    font-family: "GmarketSansLight";
+    font-family: "NotoSansKR-Light";
   
-    src: url("../assets/fonts/GmarketSansLight.ttf");
+    src: url("../assets/fonts/NotoSansKR-Light.otf");
   }
 
   @font-face {
-    font-family: "Jalnan";
+    font-family: "NotoSansKR-Medium";
   
-    src: url("../assets/fonts/Jalnan.ttf");
+    src: url("../assets/fonts/NotoSansKR-Medium.otf");
+  }
+
+  @font-face {
+    font-family: "NotoSansKR-Regular";
+  
+    src: url("../assets/fonts/NotoSansKR-Regular.otf");
+  }
+
+  @font-face {
+    font-family: "NotoSansKR-Thin";
+  
+    src: url("../assets/fonts/NotoSansKR-Thin.otf");
   }
 
 @tailwind components;

@@ -9,13 +9,16 @@ const Today = () => {
   const day: string = dayOfWeek[today.getDay()]
 
   return (
-    <div className="container mx-auto pt-[96px]">
-      <div className="leading-[64px] text-[46px] font-bold font-GmarketMedium">
-        <img className="h-[66px]" src={calendarImage}></img>
-        <h1>오늘의 한국외대 글로벌캠퍼스</h1>
-        <span>
-          {month}월 {date}일 {day}요일 소식입니다.
-        </span>
+    <div className="container mt-[27px]">
+      <div className="bg-[#3F97FF] h-[78px] rounded-today mx-5 text-[16px] leading-6 text-white flex justify-start items-center">
+        <div className="py-4 pl-9">
+          <h1 className="font-NotoSansKRRegular">
+            오늘의 모현
+          </h1>
+          <span className="font-NotoSansKRLight">
+            {month}월 {date}일 {day}요일 소식
+          </span>
+        </div>
       </div>
     </div>
   )

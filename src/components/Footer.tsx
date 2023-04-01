@@ -5,8 +5,8 @@ const Footer = () => {
   const CURRENT_YEAR = CURRENT_DAY.getFullYear();
 
   return (
-    <footer className=" text-white bottom-0 w-full font-GmarketLight ">
-      <div className="bg-sky-900">
+    <footer className=" text-black mt-20 bottom-0 w-full font-NotoSansKRLight">
+      <div className="bg-white">
         <div className="container mx-auto pt-4 flex flex-wrap flex-col sm:flex-row">
           <p className="text-sm text-center sm:text-left font-GmarketMedium">
             © {CURRENT_YEAR} 외상청
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
+  )
 };
 
 export default Footer;

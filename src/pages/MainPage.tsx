@@ -4,6 +4,7 @@ import StyleRecommend from "../components/StyleRecommend";
 import Today from "../components/Today";
 import Weather from "../components/Weather";
 import Footer from "../components/Footer";
+import Week from "../components/Week";
 
 const MainPage = () => {
   return (
@@ -11,6 +12,7 @@ const MainPage = () => {
       <Header />
       <Today />
       <Weather />
+      <Week />
       <StyleRecommend />
       <Footer />
     </div>
