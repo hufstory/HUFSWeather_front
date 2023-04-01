@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: false, // or 'media' or 'class'
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
 
   theme: {
     extend: {
@@ -12,10 +12,15 @@ module.exports = {
       },
     },
     fontFamily: {
-      GangwonBold: ["GangwonEduPowerExtraBoldA", "sans-serif"],
-      GmarketMedium: ["GmarketSansMedium", "sans-serif"],
-      GmarketLight: ["GmarketSansLight", "sans-serif"],
-      Jalnan: ["Jalnan", "sans-serif"],
+      NotoSansKRBlack: ["NotoSansKR-Black", "sans-serif"],
+      NotoSansKRBold: ["NotoSansKR-Bold", "sans-serif"],
+      NotoSansKRLight: ["NotoSansKR-Light", "sans-serif"],
+      NotoSansKRMedium: ["NotoSansKR-Medium", "sans-serif"],
+      NotoSansKRRegular: ["NotoSansKR-Regular", "sans-serif"],
+      NotoSansKRThin: ["NotoSansKR-Thin", "sans-serif"],
+    },
+    borderRadius: {
+      today: "0px 30px 30px 30px"
     },
   },
 
