@@ -10,11 +10,9 @@ const Today = () => {
 
   return (
     <div className="container mt-[27px]">
-      <div className="bg-[#3F97FF] h-[78px] rounded-today mx-5 text-[16px] leading-6 text-white flex justify-start items-center">
+      <div className="bg-[#3F97FF] shadow-default h-[78px] rounded-today mx-5 text-[16px] leading-6 text-white flex justify-start items-center">
         <div className="py-4 pl-9">
-          <h1 className="font-NotoSansKRRegular">
-            오늘의 모현
-          </h1>
+          <h1 className="font-NotoSansKRRegular">오늘의 모현</h1>
           <span className="font-NotoSansKRLight">
             {month}월 {date}일 {day}요일 소식
           </span>
