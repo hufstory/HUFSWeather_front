@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        default: "4px 12px 30px 6px rgba(0, 0, 0, 0.09)",
+        default: "0px 6px 15px 1px rgba(0, 0, 0, 0.09)",
       },
     },
     fontFamily: {
