@@ -18,6 +18,9 @@ module.exports = {
       NotoSansKRMedium: ["NotoSansKR-Medium", "sans-serif"],
       NotoSansKRRegular: ["NotoSansKR-Regular", "sans-serif"],
       NotoSansKRThin: ["NotoSansKR-Thin", "sans-serif"],
+      GmarketSansBold: ["GmarketSansBold", "sans-serif"],
+      GmarketSansLight: ["GmarketSansLight", "sans-serif"],
+      GmarketSansMedium: ["GmarketSansMedium", "sans-serif"],
     },
     borderRadius: {
       today: "0px 30px 30px 30px"

@@ -36,5 +36,24 @@
     src: url("../assets/fonts/NotoSansKR-Thin.otf");
   }
 
+  @font-face {
+    font-family: "GmarketSansBold";
+  
+    src: url("../assets/fonts/GmarketSansBold.ttf");
+  }
+
+  @font-face {
+    font-family: "GmarketSansLight";
+  
+    src: url("../assets/fonts/GmarketSansLight.ttf");
+  }
+
+  @font-face {
+    font-family: "GmarketSansMedium";
+  
+    src: url("../assets/fonts/GmarketSansMedium.ttf");
+  }
+
+
 @tailwind components;
 @tailwind utilities;
