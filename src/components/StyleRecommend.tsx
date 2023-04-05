@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const StyleRecommend = () => {
   return (
@@ -7,7 +7,7 @@ const StyleRecommend = () => {
         <div className="py-4 pl-9">AI 추천코디</div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default StyleRecommend
+export default StyleRecommend;
