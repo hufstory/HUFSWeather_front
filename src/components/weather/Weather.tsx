@@ -78,7 +78,7 @@ const Weather = () => {
             )}
           </div>
         ) : (
-          <div>Loading</div>
+          <div className="font-GmarketSansLight">Loading</div>
         )}
       </div>
     </div>

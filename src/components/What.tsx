@@ -7,10 +7,10 @@ const What = () => {
       <div className="bg-white shadow-default rounded-today mx-5 text-[16px] leading-6 text-black justify-start items-center">
         <div className="flex py-2 pl-4">
           <img src={logo1} className="h-[20px]" />
-          <div className="pl-2">What?</div>
+          <div className="pl-2 font-GmarketSansMedium">What?</div>
         </div>
 
-        <div className="pb-4 pl-4">
+        <div className="pb-4 pl-4 font-GmarketSansMedium">
           <span className="text-rose-600 font-GmarketMedium">외상청</span>은
           "한국
           <span className="text-rose-600 font-GmarketMedium">외</span>

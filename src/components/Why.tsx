@@ -7,10 +7,10 @@ const Why = () => {
       <div className="bg-white shadow-default rounded-today mx-5 text-[16px] leading-6 text-black justify-start items-center">
         <div className="flex py-2 pl-4">
           <img src={logo2} className="h-[20px]" />
-          <div className="pl-2">Why?</div>
+          <div className="pl-2 font-GmarketSansMedium">Why?</div>
         </div>
 
-        <div className="pb-4 pl-4">
+        <div className="pb-4 pl-4 font-GmarketSansMedium">
           기상청이나 날씨 앱으로는 대학교 캠퍼스의 실질적인 기온을 알기 어렵고,
           매일 날씨 검색하는거 번거로우시죠?
           <br></br>

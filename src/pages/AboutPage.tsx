@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
+import AboutHeader from "../components/AboutHeader";
 import Footer from "../components/Footer";
 import What from "../components/What";
 import Why from "../components/Why";
@@ -8,7 +8,7 @@ import Who from "../components/Who";
 const AboutPage = () => {
   return (
     <div>
-      <Header />
+      <AboutHeader />
       <What />
       <Why />
       <Who />
