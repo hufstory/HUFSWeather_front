@@ -6,6 +6,7 @@
 
 ## 진행상황
 - 2023.04.01(토) Mobile 기반 view 구성 -> Web X
+- 2023.04.06(수) API 코드 리팩토링, Axios 코드 리팩토링, 디렉토리 구조 세분화
 
 ## Checklist for git cloning Project
 #### 설치
