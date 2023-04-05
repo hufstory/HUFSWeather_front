@@ -1,15 +1,19 @@
 import React from "react";
-import AboutHeader from "../components/AboutHeader";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
+import What from "../components/What";
+import Why from "../components/Why";
+import Who from "../components/Who";
 
 const AboutPage = () => {
   return (
-  <div>
-    <AboutHeader />
-
- 
-    <Footer />
-  </div>
+    <div>
+      <Header />
+      <What />
+      <Why />
+      <Who />
+      <Footer />
+    </div>
   );
 };
 

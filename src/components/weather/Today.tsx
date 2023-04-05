@@ -1,12 +1,11 @@
-import React from "react"
-import calendarImage from "../assets/images/calendar.png"
+import React from "react";
 
 const Today = () => {
-  const today: Date = new Date()
-  const dayOfWeek: string[] = ["일", "월", "화", "수", "목", "금", "토"]
-  const month: number = today.getMonth() + 1
-  const date: number = today.getDate()
-  const day: string = dayOfWeek[today.getDay()]
+  const today: Date = new Date();
+  const dayOfWeek: string[] = ["일", "월", "화", "수", "목", "금", "토"];
+  const month: number = today.getMonth() + 1;
+  const date: number = today.getDate();
+  const day: string = dayOfWeek[today.getDay()];
 
   return (
     <div className="container mt-[27px]">
@@ -19,6 +18,6 @@ const Today = () => {
         </div>
       </div>
     </div>
-  )
-}
-export default Today
+  );
+};
+export default Today;
