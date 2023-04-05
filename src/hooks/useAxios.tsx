@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { instance } from "./instance";
 
-export const useFetch = (initalUrl: string) => {
+export const useAxios = (initalUrl: string): any => {
   const [url] = useState(initalUrl);
   const [value, setValue] = useState("");
 
@@ -11,5 +11,5 @@ export const useFetch = (initalUrl: string) => {
 
   const fetchData = () => instance.get(url).then(({ data }) => setValue(data));
 
-  return [value];
+  return value;
 };

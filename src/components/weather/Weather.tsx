@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import clearSkyDay from "../../assets/images/01d.png";
 import clearSkyNight from "../../assets/images/01n.png";
 import fewCloudsDay from "../../assets/images/02d.png";
 import fewCloudsNight from "../../assets/images/02n.png";
-// import scatteredCloudsDay from "../../assets/images/03d.png";
-// import scatteredCloudsNight from "../../assets/images/03n.png";
-// import brokenCloudsDay from "../../assets/images/04d.png";
-// import brokenCloudsNight from "../../assets/images/04n.png";
+import scatteredCloudsDay from "../../assets/images/03d.png";
+import scatteredCloudsNight from "../../assets/images/03n.png";
+import brokenCloudsDay from "../../assets/images/04d.png";
+import brokenCloudsNight from "../../assets/images/04n.png";
 import showerRainDay from "../../assets/images/09d.png";
 import showerRainNight from "../../assets/images/09n.png";
 import rainDay from "../../assets/images/10d.png";
@@ -20,20 +19,15 @@ import mistDay from "../../assets/images/50d.png";
 import mistNight from "../../assets/images/50n.png";
 
 import WeatherData from "../../data/WeatherData";
-import { useFetch } from "../../hooks/useFetch";
+import { useAxios } from "../../hooks/useAxios";
 
 const Weather = () => {
   const [data, setData] = useState<WeatherData>();
 
-  // const [value] = useFetch("/");
-  // console.log(value);
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const result = await axios.get<WeatherData>("http://localhost:3001/");
-  //     setData(result.data);
-  //   };
-  //   fetchData();
-  // }, []);
+  const value: WeatherData = useAxios("/");
+  useEffect(() => {
+    setData(value);
+  }, [value]);
 
   // openweathermap 아이콘 이름에 해당하는 이미지 파일 가져오기
   const getWeatherIcon = (icon: string, isDay: boolean) => {
@@ -42,10 +36,10 @@ const Weather = () => {
         return isDay ? clearSkyDay : clearSkyNight;
       case "02":
         return isDay ? fewCloudsDay : fewCloudsNight;
-      // case "03":
-      //   return isDay ? scatteredCloudsDay : scatteredCloudsNight;
-      // case "04":
-      //   return isDay ? brokenCloudsDay : brokenCloudsNight;
+      case "03":
+        return isDay ? scatteredCloudsDay : scatteredCloudsNight;
+      case "04":
+        return isDay ? brokenCloudsDay : brokenCloudsNight;
       case "09":
         return isDay ? showerRainDay : showerRainNight;
       case "10":
