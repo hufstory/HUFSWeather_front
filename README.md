@@ -21,19 +21,3 @@
   ```bash
   npm install
   ```
-
-  2. 본 프로젝트는 CSS Framework로 Tailwind CSS를 사용하였습니다.
-  ```bash
-  npm install tailwindcss
-  ```
-  ```bash
-  npm install tailwindcss postcss autoprefixer
-  ```
-
-  3. 필수적으로 설치합니다.
-  ```bash
-  npm install react-router-dom
-  ```
-  ```bash
-  npm install axios
-  ```
