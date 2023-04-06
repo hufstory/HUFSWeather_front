@@ -7,10 +7,10 @@ const Who = () => {
       <div className="bg-white shadow-default rounded-today mx-5 text-[16px] leading-6 text-black justify-start items-center">
         <div className="flex py-2 pl-4">
           <img src={logo3} className="h-[20px]" />
-          <div className="pl-2">Who?</div>
+          <div className="pl-2 text-base font-GmarketSansMedium">Who?</div>
         </div>
 
-        <div className="pb-4 pl-4">
+        <div className="pb-4 pl-4 text-base font-GmarketSansLight">
           PM: 신웅비
           <br></br>
           FrontEnd: 김현아 & 이교은 & 임동혁

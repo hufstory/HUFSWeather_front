@@ -595,6 +595,24 @@ video {
   src: url("../assets/fonts/NotoSansKR-Thin.otf");
 }
 
+@font-face {
+  font-family: "GmarketSansBold";
+
+  src: url("../assets/fonts/GmarketSansBold.ttf");
+}
+
+@font-face {
+  font-family: "GmarketSansLight";
+
+  src: url("../assets/fonts/GmarketSansLight.ttf");
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+
+  src: url("../assets/fonts/GmarketSansMedium.ttf");
+}
+
 .container {
   width: 100%;
 }
@@ -689,6 +707,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-\[100px\] {
   height: 100px;
 }
@@ -721,6 +743,10 @@ video {
   flex-wrap: wrap;
 }
 
+.place-items-center {
+  place-items: center;
+}
+
 .items-center {
   align-items: center;
 }
@@ -747,6 +773,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-yellow-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 252 232 / var(--tw-bg-opacity));
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -757,13 +788,30 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .pl-9 {
@@ -774,16 +822,20 @@ video {
   padding-top: 1rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
 
-.font-NotoSansKRLight {
-  font-family: NotoSansKR-Light, sans-serif;
+.font-GmarketSansLight {
+  font-family: GmarketSansLight, sans-serif;
 }
 
-.font-NotoSansKRRegular {
-  font-family: NotoSansKR-Regular, sans-serif;
+.font-GmarketSansMedium {
+  font-family: GmarketSansMedium, sans-serif;
 }
 
 .text-\[11px\] {
@@ -803,6 +855,11 @@ video {
   line-height: 1.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -810,6 +867,10 @@ video {
 
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.leading-none {
+  line-height: 1;
 }
 
 .text-\[\#505050\] {
@@ -820,6 +881,11 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-rose-600 {
+  --tw-text-opacity: 1;
+  color: rgb(225 29 72 / var(--tw-text-opacity));
 }
 
 .text-white {

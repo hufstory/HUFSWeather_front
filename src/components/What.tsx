@@ -7,15 +7,15 @@ const What = () => {
       <div className="bg-white shadow-default rounded-today mx-5 text-[16px] leading-6 text-black justify-start items-center">
         <div className="flex py-2 pl-4">
           <img src={logo1} className="h-[20px]" />
-          <div className="pl-2">What?</div>
+          <div className="pl-2 font-GmarketSansMedium">What?</div>
         </div>
 
-        <div className="pb-4 pl-4">
-          <span className="text-rose-600 font-GmarketMedium">외상청</span>은
+        <div className="pb-4 pl-4 text-base font-GmarketSansLight">
+          <span className="text-rose-600 font-GmarketSansMedium">외상청</span>은
           "한국
-          <span className="text-rose-600 font-GmarketMedium">외</span>
+          <span className="text-rose-600 font-GmarketSansMedium">외</span>
           국어대학교 기
-          <span className="text-rose-600 font-GmarketMedium">상청</span>"의
+          <span className="text-rose-600 font-GmarketSansMedium">상청</span>"의
           준말로,
           <br></br>
           서울 캠퍼스와 글로벌 캠퍼스의 날씨 정보를 간단명료하게 전달해드려요.
