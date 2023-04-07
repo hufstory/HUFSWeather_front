@@ -56,30 +56,32 @@ const Weather = () => {
   };
 
   return (
-    <div className="container mt-[27px] bg-white shadow-default rounded-today mx-5 text-[16px] leading-6 text-black flex justify-start items-center py-4 pl-9">
-      <div>
-        {data?.weather_current ? (
-          <div>
-            <h2>Current Weather</h2>
-            <p>현재 기온: {data.weather_current.temp}</p>
-            <p>최고 기온: {data.weather_current.temp_max}</p>
-            <p>최저 기온: {data.weather_current.temp_min}</p>
-            <p>날씨 정보: {data.weather_current.weather_main}</p>
-            <p>날씨 설명: {data.weather_current.weather_description}</p>
-            {data.weather_current.weather_icon && (
-              <img
-                className="h-[100px]"
-                src={getWeatherIcon(
-                  data.weather_current.weather_icon.slice(0, 2),
-                  true
-                )}
-                alt="weather icon"
-              />
-            )}
-          </div>
-        ) : (
-          <div>Loading</div>
-        )}
+    <div className="container mx-auto mt-[27px] font-GmarketSansLight">
+      <div className="bg-white shadow-default rounded-today mx-5 text-[16px] leading-6 text-black flex justify-start items-center py-4 pl-9">
+        <div>
+          {data?.weather_current ? (
+            <div>
+              <h2>Current Weather</h2>
+              <p>현재 기온: {data.weather_current.temp}</p>
+              <p>최고 기온: {data.weather_current.temp_max}</p>
+              <p>최저 기온: {data.weather_current.temp_min}</p>
+              <p>날씨 정보: {data.weather_current.weather_main}</p>
+              <p>날씨 설명: {data.weather_current.weather_description}</p>
+              {data.weather_current.weather_icon && (
+                <img
+                  className="h-[100px]"
+                  src={getWeatherIcon(
+                    data.weather_current.weather_icon.slice(0, 2),
+                    true
+                  )}
+                  alt="weather icon"
+                />
+              )}
+            </div>
+          ) : (
+            <div>Loading</div>
+          )}
+        </div>
       </div>
     </div>
   );

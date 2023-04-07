@@ -23,7 +23,7 @@ module.exports = {
       GmarketSansMedium: ["GmarketSansMedium", "sans-serif"],
     },
     borderRadius: {
-      today: "0px 30px 30px 30px"
+      today: "0px 30px 30px 30px",
     },
   },
 
@@ -31,4 +31,4 @@ module.exports = {
     extends: {},
   },
   plugins: [],
-}
+};

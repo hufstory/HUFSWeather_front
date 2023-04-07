@@ -3,7 +3,7 @@ import logo2 from "../assets/images/logo2.png";
 
 const Why = () => {
   return (
-    <div className="container mt-[27px]">
+    <div className="container mx-auto mt-[27px]">
       <div className="bg-white shadow-default rounded-today mx-5 text-[16px] leading-6 text-black justify-start items-center">
         <div className="flex py-2 pl-4">
           <img src={logo2} className="h-[20px]" />
