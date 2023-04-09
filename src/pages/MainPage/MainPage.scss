@@ -1,0 +1,88 @@
+$back1: linear-gradient(135deg, #bcec68 -20%, #0eb9a4 120%);
+$back2: linear-gradient(135deg, #f572c1 -20%, #6a37ab 120%);
+$back3: linear-gradient(135deg, #80ecf7 -20%, #706aff 120%);
+$back4: linear-gradient(135deg, #5de2ff -20%, #08bb8a 120%);
+
+$back5: linear-gradient(140deg, #5b8fb9, #301e67);
+$back6: linear-gradient(140deg, #5b8fb9, #301e67);
+$back7: linear-gradient(120deg, #5b8fb9 40%, #301e67 40%);
+$back8: linear-gradient(120deg, #1c5f93 20%, rgb(186, 138, 146));
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:focus {
+  outline: none;
+}
+
+a {
+  color: #6d8ca0;
+  font-weight: 700;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#lastUpdated {
+  color: #fff;
+  padding: 5% 0;
+}
+#lastUpdated:before {
+  content: "-- ";
+}
+#lastUpdated:after {
+  content: " --";
+}
+
+// weather-page scss
+.weather-page {
+  background: $back8;
+
+  color: #fff;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  color: #fff;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+  position: relative;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  text-align: center;
+
+  // icon
+  img {
+    filter: drop-shadow(10px 6px 6px #9e9d9d);
+    filter: drop-shadow(0px 8px 20px #9e9d9d);
+  }
+
+  .wrapper {
+    color: #fff;
+    overflow: auto;
+    width: 100%;
+  }
+
+  .location {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .date {
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .temp {
+    font-size: 3em;
+    line-height: 1.3;
+  }
+  .temp:after {
+    content: "\00b0";
+    margin-right: -0.3em;
+  }
+}

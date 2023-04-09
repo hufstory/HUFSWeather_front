@@ -7,7 +7,7 @@ import Today from "../components/weather/Today";
 import Weather from "../components/weather/Weather";
 import Week from "../components/weather/Week";
 
-const MainPage = () => {
+const MainPageOld = () => {
   return (
     <div>
       <Header />
@@ -20,4 +20,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default MainPageOld;
