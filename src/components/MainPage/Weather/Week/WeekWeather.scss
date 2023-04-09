@@ -1,0 +1,131 @@
+// 일 단위
+#future {
+  margin-bottom: 10%;
+  padding: 0 5%;
+  color: #fff;
+  overflow: auto;
+  width: 100%;
+
+  .container {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    margin: 0;
+    padding: 5% 10%;
+    width: 100%;
+  }
+  .container:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  .day {
+    padding: 0;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .weatherIcon {
+    float: right;
+    font-size: 0.5em;
+    height: 50px;
+    margin-left: 10%;
+    margin-top: -5%;
+    width: 50px;
+  }
+  p {
+    text-align: left;
+  }
+  .high:after,
+  .low:after {
+    content: "\00b0";
+    padding: 1px;
+  }
+}
+
+@media (min-width: 375px) {
+  nav {
+    left: 5%;
+    position: absolute;
+    top: 10%;
+  }
+  #locateBtn,
+  #unitBtn {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #current {
+    padding-bottom: 15%;
+    padding-top: 15%;
+  }
+}
+@media (min-width: 550px) {
+  nav {
+    top: 8%;
+  }
+  /* Current Weather */
+  #current {
+    font-size: 1.3rem;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+  .date,
+  #current .conditions {
+    font-size: 0.9em;
+  }
+  #current .weatherIcon {
+    font-size: 0.95em;
+    height: 120px;
+    margin: 7% auto 3%;
+    width: 120px;
+  }
+  /* Future Forecast */
+  #future {
+    font-size: 1.1rem;
+    padding: 0;
+    margin-bottom: 3%;
+  }
+  #future > .container {
+    border-bottom: none;
+    float: left;
+    padding: 20px;
+    width: 33.33%;
+  }
+  #future > .container:first-child {
+    border-top: none;
+  }
+  #future > .container:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  #future .day,
+  #future p {
+    text-align: center;
+  }
+  #future .weatherIcon {
+    font-size: 0.56em;
+    float: none;
+    height: 60px;
+    margin: 10% auto 5%;
+    width: 60px;
+  }
+}
+
+@media (min-width: 880px) {
+  nav {
+    top: 5%;
+  }
+  .weather-page {
+    padding: 0 20%;
+    .header {
+      padding-left: 30%;
+      padding-right: 30%;
+    }
+  }
+  #current {
+    font-size: 1.5rem;
+    padding-bottom: 7%;
+    padding-top: 7%;
+  }
+  #current .weatherIcon {
+    font-size: 0.82em;
+    margin: 5% auto 2%;
+  }
+  #lastUpdated {
+    padding: 3%;
+  }
+}
