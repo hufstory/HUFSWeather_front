@@ -1,0 +1,51 @@
+// 현재 날씨
+#current {
+  padding: 10% 5% 10%;
+  position: relative;
+
+  #temp-div {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+
+    -webkit-perspective: 1000;
+    -webkit-transition: 0.75s ease-in-out;
+    transition: 0.75s ease-in-out;
+
+    #icon-temp {
+      margin: 0 auto;
+
+      width: 100%;
+
+      text-align: Center;
+      font-size: 45px;
+      color: #fff;
+      i {
+        position: relative;
+        top: 8px;
+      }
+      p {
+        display: inline-block;
+        font-size: 28px;
+        max-width: 210px;
+        line-height: 60px;
+      }
+    }
+  }
+  #temp-div.weather-menu-show {
+    transform: translate(-80px, -320px) scale(0.75);
+  }
+
+  .weatherIcon {
+    height: 100px;
+    margin: 10% auto 7%;
+    width: 100px;
+  }
+  .conditions {
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+}
