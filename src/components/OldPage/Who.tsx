@@ -1,5 +1,5 @@
 import React from "react";
-import logo3 from "../assets/images/logo3.png";
+import logo3 from "../../assets/images/logo3.png";
 
 const Who = () => {
   return (
