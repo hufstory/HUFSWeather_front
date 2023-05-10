@@ -5,6 +5,7 @@ import { CurrentWeather } from "../../components/MainPage/Weather/Current/Curren
 import { WeekWeather } from "../../components/MainPage/Weather/Week/WeekWeather";
 import { Footer } from "../../components/MainPage/Footer/Footer";
 import { WaveContainer } from "../../components/MainPage/WaveContainer/WaveContainer";
+import { RecommendClothes } from "../../components/MainPage/Weather/Recommend/RecommendClothes";
 
 export const MainPage = () => {
   return (
@@ -12,6 +13,7 @@ export const MainPage = () => {
       <Header />
       <CurrentWeather />
       <WeekWeather />
+      <RecommendClothes />
       <Footer />
       <WaveContainer />
     </div>
