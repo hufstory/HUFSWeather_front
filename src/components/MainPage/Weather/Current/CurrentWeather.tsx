@@ -1,28 +1,50 @@
-import icon from "../../../../assets/icons/cloudy.png";
-import icon2 from "../../../../assets/icons/cloudy.png";
-import icon3 from "../../../../assets/icons/rainy.png";
+import React, { useEffect, useState } from "react";
 import "./CurrentWeather.scss";
 
+import { useAxios } from "../../../../hooks/useAxios";
+import { getWeatherIcon } from "../../../../hooks/getWeatherIcon";
+import { getCurrentDay } from "../../../../hooks/getCurrentDay";
+import WeatherData from "../../../../data/WeatherData";
+
 export const CurrentWeather = () => {
-  const today: Date = new Date();
-  const year: number = today.getFullYear();
-  const dayOfWeek: string[] = ["일", "월", "화", "수", "목", "금", "토"];
-  const month: number = today.getMonth() + 1;
-  const date: number = today.getDate();
-  const day: string = dayOfWeek[today.getDay()];
+  const [data, setData] = useState<WeatherData>();
+  const value: WeatherData = useAxios("/");
+  useEffect(() => {
+    setData(value);
+  }, [value]);
+
+  const currentDay = getCurrentDay();
 
   return (
     <div id="current" className="wrapper">
       <h1 className="location">오늘의 모현</h1>
-      <h2 className="date">{day}요일, {month}월 {date}일, {year}</h2>
-      <div className="weatherIcon">
-        <img src={icon3} className="icon" />
-        <div className="sunny">
-          <div className="inner"></div>
+      <h2 className="date">
+        {currentDay.day}요일, {currentDay.month}월 {currentDay.date}일,{" "}
+        {currentDay.year}
+      </h2>
+      {data?.weather_current ? (
+        <div className="weatherIcon">
+          <img
+            src={getWeatherIcon(
+              data.weather_current.weather_icon.slice(0, 2),
+              true
+            )}
+            alt="weather icon"
+            className="icon"
+          />
+          <div className="sunny">
+            <div className="inner"></div>
+          </div>
         </div>
-      </div>
-      <p className="temp">14</p>
-      <p className="conditions">Sunny</p>
+      ) : (
+        <div>Loading</div>
+      )}
+      {data?.weather_current && (
+        <>
+          <p className="temp">{data.weather_current.temp}</p>
+          <p className="conditions">{data.weather_current.weather_main}</p>
+        </>
+      )}
     </div>
   );
 };
