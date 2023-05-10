@@ -9,7 +9,7 @@ import "./WeekWeather.scss";
 
 export const WeekWeather = () => {
   const [data, setData] = useState<WeatherData>();
-  const value: WeatherData = useAxios("/");
+  const value: WeatherData = useAxios("/weather");
   useEffect(() => {
     setData(value);
   }, [value]);

@@ -8,7 +8,7 @@ import WeatherData from "../../../../data/WeatherData";
 
 export const CurrentWeather = () => {
   const [data, setData] = useState<WeatherData>();
-  const value: WeatherData = useAxios("/");
+  const value: WeatherData = useAxios("/weather");
   useEffect(() => {
     setData(value);
   }, [value]);
