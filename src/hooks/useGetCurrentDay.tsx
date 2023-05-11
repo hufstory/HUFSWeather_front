@@ -1,4 +1,4 @@
-export const getCurrentDay = () => {
+export const useGetCurrentDay = () => {
   const getNextDays = (numDays: number): string[] => {
     const dayOfWeekEng: string[] = [
       "Sun",

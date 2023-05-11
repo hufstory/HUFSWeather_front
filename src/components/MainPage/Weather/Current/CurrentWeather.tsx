@@ -3,7 +3,7 @@ import "./CurrentWeather.scss";
 
 import { useAxios } from "../../../../hooks/useAxios";
 import { getWeatherIcon } from "../../../../hooks/getWeatherIcon";
-import { getCurrentDay } from "../../../../hooks/getCurrentDay";
+import { useGetCurrentDay } from "../../../../hooks/useGetCurrentDay";
 import WeatherData from "../../../../data/WeatherData";
 
 export const CurrentWeather = () => {
@@ -13,7 +13,7 @@ export const CurrentWeather = () => {
     setData(value);
   }, [value]);
 
-  const currentDay = getCurrentDay();
+  const currentDay = useGetCurrentDay();
 
   return (
     <div id="current" className="wrapper">
