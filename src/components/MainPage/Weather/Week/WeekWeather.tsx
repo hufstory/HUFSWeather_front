@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-import { getWeatherIcon } from "../../../../hooks/getWeatherIcon";
-import { useGetCurrentDay } from "../../../../hooks/useGetCurrentDay";
+import { getWeatherIcon } from "../../../../utils/getWeatherIcon";
+import { getCurrentDay } from "../../../../utils/getCurrentDay";
 import { useAxios } from "../../../../hooks/useAxios";
 import WeatherData from "../../../../data/WeatherData";
 
@@ -14,7 +14,7 @@ export const WeekWeather = () => {
     setData(value);
   }, [value]);
 
-  const currentDay = useGetCurrentDay();
+  const currentDay = getCurrentDay();
 
   return (
     <div id="future" className="wrapper">

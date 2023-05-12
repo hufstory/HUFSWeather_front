@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./CurrentWeather.scss";
 
 import { useAxios } from "../../../../hooks/useAxios";
-import { getWeatherIcon } from "../../../../hooks/getWeatherIcon";
-import { useGetCurrentDay } from "../../../../hooks/useGetCurrentDay";
+import { getWeatherIcon } from "../../../../utils/getWeatherIcon";
+import { getCurrentDay } from "../../../../utils/getCurrentDay";
 import WeatherData from "../../../../data/WeatherData";
 
 export const CurrentWeather = () => {
@@ -13,7 +13,7 @@ export const CurrentWeather = () => {
     setData(value);
   }, [value]);
 
-  const currentDay = useGetCurrentDay();
+  const currentDay = getCurrentDay();
 
   return (
     <div id="current" className="wrapper">
