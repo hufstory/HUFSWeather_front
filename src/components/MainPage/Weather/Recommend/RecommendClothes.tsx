@@ -13,9 +13,13 @@ export const RecommendClothes = () => {
   }, [value]);
 
   return (
-    <>
-      <div>GPT Recommend</div>
-      <div>{gptData && gptData.gptmessage}</div>
-    </>
+    <div className="GptZone">
+      <div className="gptRecommend">GPT Recommend</div>
+      {gptData ? (
+        <div className="gptMessage">{gptData.gptmessage}</div>
+      ) : (
+        <div>GPT가 답안을 작성중입니다...</div> // 로딩 중일 때 표시될 내용
+      )}
+    </div>
   );
 };

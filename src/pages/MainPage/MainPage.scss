@@ -33,13 +33,13 @@ $back3: linear-gradient(135deg, #80ecf7 -20%, #706aff 120%);
 $back4: linear-gradient(135deg, #5de2ff -20%, #08bb8a 120%);
 
 $back5: linear-gradient(140deg, #5b8fb9, #301e67);
-$back6: linear-gradient(140deg, #5b8fb9, #301e67);
-$back7: linear-gradient(120deg, #5b8fb9 65%, #301e67 40%);
-$back8: linear-gradient(120deg, #301e67 65%, #5b8fb9 40%);
-$back10: linear-gradient(120deg, #1c5f93 20%, rgb(186, 138, 146));
+$back6: linear-gradient(120deg, #5b8fb9 65%, #301e67 40%);
+$back7: linear-gradient(120deg, #301e67 65%, #5b8fb9 40%);
+$back8: linear-gradient(120deg, #1c5f93 20%, rgb(186, 138, 146));
+
 // weather-page scss
 .weather-page {
-  background: $back7;
+  background: $back5;
 
   color: #fff;
   overflow: auto;
