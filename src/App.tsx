@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./styles/tailwind.css";
 import { Helmet } from "react-helmet";
 import { MainPage } from "./pages/MainPage/MainPage";
 
