@@ -27,6 +27,13 @@
     margin-left: 10%;
     margin-top: -5%;
     width: 50px;
+
+    display: flex;
+    // justify-content: center;
+
+    .icon {
+      object-fit: cover;
+    }
   }
   p {
     text-align: left;

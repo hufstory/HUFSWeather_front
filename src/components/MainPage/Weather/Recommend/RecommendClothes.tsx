@@ -14,7 +14,7 @@ export const RecommendClothes = () => {
 
   return (
     <div className="GptZone">
-      <div className="gptRecommend">GPT Recommend</div>
+      <div className="gptRecommend">외상청의 추천하는 옷</div>
       {gptData ? (
         <div className="gptMessage">{gptData.gptmessage}</div>
       ) : (
