@@ -1,10 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AboutPage from "./pages/AboutPage";
-import "./styles/tailwind.css";
 import { Helmet } from "react-helmet";
 import { MainPage } from "./pages/MainPage/MainPage";
-import MainPageOld from "./pages/MainPage_old";
 
 function App() {
   return (
@@ -15,8 +12,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/mainpageold" element={<MainPageOld />} />
-          <Route path="/aboutpage" element={<AboutPage />} />
         </Routes>
       </Router>
     </div>

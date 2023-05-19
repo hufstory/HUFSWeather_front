@@ -1,51 +1,90 @@
-import icon from "../../../../assets/icons/cloudy.png";
-import icon2 from "../../../../assets/icons/cloudy.png";
-import icon3 from "../../../../assets/icons/rainy.png";
+import { useEffect, useState } from "react";
+
+import { getWeatherIcon } from "../../../../utils/getWeatherIcon";
+import { getCurrentDay } from "../../../../utils/getCurrentDay";
+import { useAxios } from "../../../../hooks/useAxios";
+import WeatherData from "../../../../data/WeatherData";
+
 import "./WeekWeather.scss";
 
 export const WeekWeather = () => {
+  const [data, setData] = useState<WeatherData>();
+  const value: WeatherData = useAxios("/weather");
+  useEffect(() => {
+    setData(value);
+  }, [value]);
+
+  const currentDay = getCurrentDay();
+
   return (
     <div id="future" className="wrapper">
       <div className="container">
-        <h3 className="day">Mon</h3>
+        <h3 className="day">{currentDay.nextDays[0]}</h3>
         <div className="weatherIcon">
-          <img src={icon2} />
-
+          <img
+            src={getWeatherIcon(
+              data?.weather_whole?.secondday?.icon.slice(0, 2) ?? "",
+              true
+            )}
+            alt="weather icon"
+          />
           <div className="partlycloudy">
             <div className="inner"></div>
           </div>
         </div>
-        <p className="conditions">Partly Cloudy</p>
-        <p className="tem`pRange">
-          <span className="high">64</span> | <span className="low">48</span>
+        <p className="conditions">{data?.weather_whole?.secondday?.main}</p>
+        <p className="tempRange">
+          <span className="high">
+            {data?.weather_whole?.secondday?.maxTemp}
+          </span>{" "}
+          |{" "}
+          <span className="low">{data?.weather_whole?.secondday?.minTemp}</span>
         </p>
       </div>
-      <div className="container">
-        <h3 className="day">Tue</h3>
-        <div className="weatherIcon">
-          <img src={icon2} />
 
+      <div className="container">
+        <h3 className="day">{currentDay.nextDays[1]}</h3>
+        <div className="weatherIcon">
+          <img
+            src={getWeatherIcon(
+              data?.weather_whole?.thirdday?.icon.slice(0, 2) ?? "",
+              true
+            )}
+            alt="weather icon"
+          />
           <div className="mostlycloudy">
             <div className="inner"></div>
           </div>
         </div>
-        <p className="conditions">Mostly Cloudy</p>
+        <p className="conditions">{data?.weather_whole?.thirdday?.main}</p>
         <p className="tempRange">
-          <span className="high">57</span> | <span className="low">45</span>
+          <span className="high">{data?.weather_whole?.thirdday?.maxTemp}</span>{" "}
+          |{" "}
+          <span className="low">{data?.weather_whole?.thirdday?.minTemp}</span>
         </p>
       </div>
-      <div className="container">
-        <h3 className="day">Wed</h3>
-        <div className="weatherIcon">
-          <img src={icon2} />
 
+      <div className="container">
+        <h3 className="day">{currentDay.nextDays[2]}</h3>
+        <div className="weatherIcon">
+          <img
+            src={getWeatherIcon(
+              data?.weather_whole?.fourthday?.icon.slice(0, 2) ?? "",
+              true
+            )}
+            alt="weather icon"
+          />
           <div className="rain">
             <div className="inner"></div>
           </div>
         </div>
-        <p className="conditions">Chance of Rain</p>
+        <p className="conditions">{data?.weather_whole?.fourthday?.main}</p>
         <p className="tempRange">
-          <span className="high">63</span> | <span className="low">59</span>
+          <span className="high">
+            {data?.weather_whole?.fourthday?.maxTemp}
+          </span>{" "}
+          |{" "}
+          <span className="low">{data?.weather_whole?.fourthday?.minTemp}</span>
         </p>
       </div>
     </div>

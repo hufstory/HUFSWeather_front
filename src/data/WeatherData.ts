@@ -7,31 +7,41 @@ export default interface WeatherData {
   weather_times: {
     list: WeatherTime[];
   };
-  weather_whole: {
+  weather_whole?: {
     firstday: {
       minTemp: number;
       maxTemp: number;
       day: string;
+      icon: string;
+      main: string;
     };
     secondday: {
       minTemp: number;
       maxTemp: number;
       day: string;
+      icon: string;
+      main: string;
     };
     thirdday: {
       minTemp: number;
       maxTemp: number;
       day: string;
+      icon: string;
+      main: string;
     };
     fourthday: {
       minTemp: number;
       maxTemp: number;
       day: string;
+      icon: string;
+      main: string;
     };
     fifthday: {
       minTemp: number;
       maxTemp: number;
       day: string;
+      icon: string;
+      main: string;
     };
   };
 }
