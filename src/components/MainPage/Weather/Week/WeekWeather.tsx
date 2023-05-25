@@ -28,9 +28,6 @@ export const WeekWeather = () => {
             )}
             alt="weather icon"
           />
-          <div className="partlycloudy">
-            <div className="inner"></div>
-          </div>
         </div>
         <p className="conditions">{data?.weather_whole?.secondday?.main}</p>
         <p className="tempRange">
@@ -52,9 +49,6 @@ export const WeekWeather = () => {
             )}
             alt="weather icon"
           />
-          <div className="mostlycloudy">
-            <div className="inner"></div>
-          </div>
         </div>
         <p className="conditions">{data?.weather_whole?.thirdday?.main}</p>
         <p className="tempRange">
@@ -74,9 +68,6 @@ export const WeekWeather = () => {
             )}
             alt="weather icon"
           />
-          <div className="rain">
-            <div className="inner"></div>
-          </div>
         </div>
         <p className="conditions">{data?.weather_whole?.fourthday?.main}</p>
         <p className="tempRange">

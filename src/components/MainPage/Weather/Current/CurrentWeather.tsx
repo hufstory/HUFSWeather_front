@@ -32,9 +32,6 @@ export const CurrentWeather = () => {
             alt="weather icon"
             className="icon"
           />
-          <div className="sunny">
-            <div className="inner"></div>
-          </div>
         </div>
       ) : (
         <div>Loading</div>
